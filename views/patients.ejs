@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patients List</title>
+</head>
+<body>
+  <h1>Patients List</h1>
+  <ul>
+    <% results.forEach(function(patient) { %>
+      <li><%= patient.first_name %> <%= patient.last_name %> - DOB: <%= patient.date_of_birth %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
